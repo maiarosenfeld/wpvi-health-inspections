@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Dining Facilities Plagued With Health Violations</title>
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dining inspections show many local college and university food vendors have health code violations that could make students sick.">
+    <meta name="keywords" content="university, college, dining, health, code, inspection, violation, food, rodents, insects, cockroaches, mold, sludge, unsanitary">
+    
+	<!-- CSS stylesheets -->	
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/jpw5sme.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+<div class="main-container">
+
+    <div class="header-bg-overlay"><img src="img/BACKGROUND.png"></div>
+
+    <div class="content-menu story-page-menu">
+        <div class="menu-logo">
+            <img src="img/INSERT MENU LOGO HERE.png">
+        </div>
+
+    </div> <!-- END MENU -->
+
+    <div class="content-header story-content-header">
+        <div class="background"><video src="media/INSERT AMBIENT VIDEO HERE.mp4" muted autoplay loop></video></div>
+
+        <div class="story-headline">
+            <h2>Philadelphia area universities have dozens of dining facilities to feed their students. But health inspections show they aren't always up to code.</h2>
+            <p>A 6abc investigation found dozens of dangerous health violations at local university dining facilities.</p>
+
+            <div class="byline">
+                Investigative Reporter: Chad Pradelli<br>
+                Investigative Producer: Cheryl Mettendorf<br>
+                Data Reporter: Maia Rosenfeld<br>
+                Webpage Development: Maia Rosenfeld
+            </div>
+
+            <div class="scroll-down">
+                <img src="img/scroll-down2.png">
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="content">
+    	
+        <div class="story story1">
+            
+            <div class="story-text story-text1">
+                
+                <p><span class="drop-cap">FIRST LETTER</span>INSERT STORY TEXT HERE</p>
+
+            </div>
+
+            <div class="story-text story-text2">
+
+                <h3 class="story-text-subheader">INSERT SUBHED HERE</h3>
+                
+                <p>INSERT STORY TEXT HERE</p>
+
+                <div class="embed">
+
+                    <div class="embed-title">
+                        <h4>EMBEDDED TABLE HEADER</h4>
+                        <p>EMBEDDED TABLE SUBHEAD</p>
+                    </div>
+
+                    <div style="min-height:455px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/3J7CR/embed.js?v=5" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/3J7CR/full.png" alt="" /></noscript></div>
+
+                </div>
+
+                <p>INSERT MORE TEXT HERE</p>
+
+                <div class="img-embed">
+
+                    <div class="embed-title">
+                        <h4>EMBEDDED MAP HEADER</h4>
+                    </div>
+
+                    <img class="img-embed-desktop" src="img/Mobile-climate-perspectives-voting-01.png">
+                    <img class="img-embed-mobile" src="img/Mobile-climate-perspectives-voting-mobile-01.png">
+                </div>
+
+                <h3 class="story-text-subheader">INSERT STORY SUBHEAD HERE</h3>
+
+                <p>INSERT MORE STORY TEXT HERE</p>
+
+                <div class="embed">
+                    
+                    <div class="embed-title">
+                        <h4>Percent of U.S. adults who think global warming will harm them personally</h4>
+                        <p>Click on the buttons below to see the percentage of people who say global warming will harm them personally and the percentage who say they have already personally experienced the effects.</p>
+                    </div>
+
+                    <div class="switch-buttons">
+                        <button class="map-button map1-button">Will cause personal harm</button>
+                        <button class="map-button map2-button">Already felt personal effects</button>
+                    </div>
+
+                    <div class="map-embed">
+                        <div class="datawrapper-map map1">
+                            <div style="min-height:455px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Ztthu/embed.js?v=9" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/Ztthu/full.png" alt="" /></noscript></div>
+                        </div>
+                        <div class="datawrapper-map map2">
+                            <div style="min-height:455px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/AAF2s/embed.js?v=11" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/AAF2s/full.png" alt="" /></noscript></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p> INSERT MORE STORY TEXT HERE </p>
+
+                <div class="pull-quote">
+                    <div class="pull-quote-wrap">
+                        <div class="pull-quote-outline">
+                            <div class="pull-quote-clip">
+                                <div class="pull-quote-photo"><img src="img/opinion-still.jpg"></div>
+                                <div class="quote-mark left-quote"><img src="img/left-quote.png"></div>
+                                <div class="quote-mark right-quote"><img src="img/right-quote.png"></div>
+                                <p class="quote">You can say that you're worried but whether or not you do something about it is a different matter entirely.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="attribution">Joe &Aacute;rvai, Wrigley Institute for Environment and Sustainability, USC</span>
+                </div>
+
+                <h3 class="story-text-subheader">STORY SUBHEAD HERE</h3>
+
+                <p>MORE STORY TEXT HERE</p>
+
+                <div class="img-embed">
+
+                    <div class="embed-title">
+                        <h4>Groups that Americans believe should do more to address global warming</h4>
+                    </div>
+
+                    <img class="img-embed-desktop" src="img/groups-do-more-global-warming-01.png">
+                    <img class="img-embed-mobile" src="img/groups-do-more-global-warming-mobile-01.png">
+                </div>
+
+                <p>MORE STORY TEXT HERE</p>
+
+                <div class="pull-quote">
+                    <div class="pull-quote-wrap">
+                        <div class="pull-quote-outline">
+                            <div class="pull-quote-clip">
+                                <div class="pull-quote-photo"><img src="img/opinion-still.jpg"></div>
+                                <div class="quote-mark left-quote"><img src="img/left-quote.png"></div>
+                                <div class="quote-mark right-quote"><img src="img/right-quote.png"></div>
+                                <p class="quote">If we can make our city a showcase and a flagship for what other cities across the state of Alabama can do? That's excellent.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="attribution">Casi Callaway, Chief Resilience Officer, Mobile, AL</span>
+                </div>
+
+                <h3 class="story-text-subheader">INSERT SUBHEAD HERE</h3>
+
+                <p>MORE STORY TEXT HERE</p>
+
+                <h4 class="story-text-sub-sub">INNER STORY SUBHEAD HERE</h4>
+
+                <p>MORE STORY TEXT HERE</p>
+
+                <div class="pull-quote">
+                    <div class="pull-quote-wrap">
+                        <div class="pull-quote-outline">
+                            <div class="pull-quote-clip">
+                                <div class="pull-quote-photo"><img src="img/opinion-still.jpg"></div>
+                                <div class="quote-mark left-quote"><img src="img/left-quote.png"></div>
+                                <div class="quote-mark right-quote"><img src="img/right-quote.png"></div>
+                                <p class="quote">We're not talking politics. We're talking people.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="attribution">Lizz Darcy, Public Information Officer, Mariposa County, CA</span>
+                </div>
+
+                <h4 class="story-text-sub-sub">LAST STORY SUBHEAD HERE</h4>
+
+                <p>INSERT LAST BIT OF STORY TEXT HERE.</p>
+
+
+            </div>
+
+        </div> <!-- end story text 2 -->
+
+    </div> <!-- end content 2 -->
+
+
+
+        <div class="carousel-section carousel-section-abc">
+
+            <div class="content-header content-header-abc">
+                <h3>See more reporting on the impacts of climate change from ABC Owned Television Stations</h3>
+            </div>  
+            
+            <div class="carousel content-abc">
+                <div class="carousel-row carousel-row-abc"></div>
+            </div> 
+
+        </div>
+
+        <div class="carousel-section carousel-section-tcd">
+
+            <div class="content-header content-header-tcd">
+                <h3>Explore more climate-related solutions stories through our partnership with <a href="https://www.thecooldown.com/" target="_blank">The Cool Down</a></h3>
+            </div>  
+            
+            <div class="carousel carousel-tcd">
+                <div class="carousel-row carousel-row-tcd"></div>
+            </div> 
+
+        </div>
+
+        <p class="copywrite">&#9400; 2023 ABC Owned Television Stations </p>
+
+        <br>
+        <br>
+        <br>        
+
+
+    </div> <!-- END CONTENT -->
+
+
+</div> <!-- end main container -->
+
+
+
+<!-- JAVASCRIPT -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jqueryui.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+	<script src="data/states.json"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<script src="js/lib/jquery.waypoints.js"></script>
+    <script src="js/lib/jquery.waypoints.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <!-- <script type="text/javascript" src="dist/leaflet.ajax.js"></script> -->
+    <script src="js/dist/leaflet.ajax.js"></script>
+    <script src="js/dist/leaflet.ajax.min.js"></script>
+	<script src="js/opinions_script.js"></script>
+
+    <script>!function(){var a,n,i=window||{},s=document||{},t=0;function r(){var e=a.scrollHeight;isNaN(e)||e==t||(t=e,isNaN(t)||i.webkit&&i.webkit.messageHandlers&&i.webkit.messageHandlers.espnWebview&&i.webkit.messageHandlers.espnWebview.postMessage({callBack:null,commandName:"ABCNresize",params:{height:t}}))}function o(){var e,a;e=r,a=750,clearTimeout(n),n=setTimeout(e,a)}i.addEventListener("load",function(e){a=s.querySelector(".main-container"),o(),i.addEventListener("resize",o)})}();</script>
+  </body>
+</html>
