@@ -246,7 +246,7 @@
       <div id="videowrapper">
         <div id="fullScreenDiv">
           <video id="video" role="presentation" muted autoplay loop preload="auto" class="blur">
-            <source src="https://github.com/maiarosenfeld/wpvi-health-inspections/blob/main/AdobeStock_367005223_Video_HD_Preview.mp4" type="video/mp4">
+            <source src="main/AdobeStock_367005223_Video_HD_Preview.mp4" type="video/mp4">
                     </video>
                     <div id="videoMessage" class="sticky-thing">
                       <p>University Dining Facilities Plagued With Health Violations</p>
@@ -255,7 +255,7 @@
                 </div>
             </div>
           <div class="bounce">
-            <img class="arrow" src='/Users/rosem162/Documents/GitHub/portfolio/pngegg.png'></img>
+            <img class="arrow" src='main/pngegg.png'></img>
           </div>
         <article style="background-color:#4968BF;">
           <div class="step" data-step="">
@@ -282,12 +282,12 @@
         </p>
 
         <div class="bounce">
-          <img class="arrow" src="https://github.com/maiarosenfeld/wpvi-health-inspections/blob/main/pngegg.png"></img>
+          <img class="arrow" src="main/pngegg.png"></img>
         </div>
 
         <div class="sticky-thing" style="background-color:#4968BF;">
           <div class="bounce">
-            <img class="arrow" src='https://github.com/maiarosenfeld/wpvi-health-inspections/blob/main/pngegg.png'></img>
+            <img class="arrow" src='main/pngegg.png'></img>
           </div>
                 </div>
         <article>
