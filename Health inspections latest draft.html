@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Health Inspections Page</title>
+    <meta name="description" content="Health Inspections Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      #scrolly {
+        position: relative;
+  );
+        padding: 0rem;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 200rem;
+        margin: 0 auto;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 12.5vh;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sticky-thing p {
+        font-size: 5rem;
+        font-weight: 900;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing h3 {
+        font-size: 2rem;
+        font-weight: 200;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing text {
+        font-size: 3rem;
+        font-weight: 300;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step {
+        margin: 0 auto 0rem auto;
+        color: #fff;
+      }
+
+      .step h2 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: left;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active h2 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: left;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active p {
+        background-color: inherit;
+        color: #fff;
+        font-weight: 400;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step b {
+        text-align: center;
+        padding: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active b {
+        text-align: center;
+        align-items: center;
+        padding: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step:last-child {
+        margin-bottom: 20;
+      }
+
+
+      .arrow {
+        height:70px;
+        width:70px;
+      }
+
+      .bounce {
+ position:fixed;
+ left:50%;
+ bottom:0;
+ margin-top:-20px;
+ margin-left:-25px;
+ height:50px;
+ width:50px;
+ -webkit-animation:bounce 1s infinite;
+ -moz-animation:bounce 1s infinite;
+ -o-animation:bounce 1s infinite;
+ animation:bounce 1s infinite;
+
+}
+
+@-webkit-keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+@-moz-keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+@-o-keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+@keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+#videowrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+#fullScreenDiv{
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+    margin: 0;
+    position: relative;
+}
+
+#video{
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: block;
+    filter: brightness(70%);
+}
+@media (min-aspect-ratio: 16/9) {
+  #video{
+    width: 100vw;
+    height:auto;
+    filter: brightness(70%);
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    height: 100vh;
+    width:auto;
+    margin-left: 50vw;
+    transform: translate(-50%);
+    filter: brightness(70%);
+  }
+}
+
+#videoMessage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section id="scrolly">
+      <div id="videowrapper">
+        <div id="fullScreenDiv">
+          <video id="video" role="presentation" muted autoplay loop preload="auto" class="blur">
+            <source src="/Users/rosem162/Documents/GitHub/portfolio/AdobeStock_367005223_Video_HD_Preview.mp4" type="video/mp4">
+                    </video>
+                    <div id="videoMessage" class="sticky-thing">
+                      <p>University Dining Facilities Plagued With Health Violations</p>
+                      <h1>Dining inspections show many local college and university food vendors have health code violations that could make students sick.</h1>
+                    </div>
+                </div>
+            </div>
+          <div class="bounce">
+            <img class="arrow" src='/Users/rosem162/Documents/GitHub/portfolio/pngegg.png'></img>
+          </div>
+        <article style="background-color:#4968BF;">
+          <div class="step" data-step="">
+            <p><br></p>
+            <h2>Investigative Reporter: Chad Pradelli<br>Investigative Producer: Cheryl Mettendorf<br>Data Journalist & Web Developer: Maia Rosenfeld</h2>
+            <p><br></p>
+            </div>
+          <div class="step" data-step="">
+            <p>Philadelphia area universities offer students a variety of dining options.</p>
+            </div>
+          <div class="step" data-step="">
+            <p>But health inspections show they aren't always up to code.</p>
+            </div>
+          <div class="step" data-step="">
+            <p>Our investigation found serious violations at dining halls, restaurants and other food vendors on several local campuses.</p>
+            </div>
+          <div class="step" data-step="">
+            <p>Search a school in the table below to see recent health code violations at its dining facilities.<br><br></p>
+            </div>
+        </article>
+
+        <p class="intro__dek">
+          <div style="min-height:2863px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/8pFaf/embed.js?v=6" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/8pFaf/full.png" alt="" /></noscript></div>
+        </p>
+
+        <div class="bounce">
+          <img class="arrow" src='/Users/rosem162/Documents/GitHub/portfolio/pngegg.png'></img>
+        </div>
+
+        <div class="sticky-thing" style="background-color:#4968BF;">
+          <div class="bounce">
+            <img class="arrow" src='/Users/rosem162/Documents/GitHub/portfolio/pngegg.png'></img>
+          </div>
+                </div>
+        <article>
+        <div class="step" data-step="INTRO">
+            <b>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department. But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</b>
+          </div>
+        <div class="step" data-step="West Chester University">
+          <b>At West Chester University dining facilities, critical violations included sinks missing hand soap, dented food cans that could lead to the growth of a deadly bacteria, and a refrigerator not cooling to code.
+            <br><br>On the same trip, inspectors also found evidence of flies in the dining hall kitchens. A mandatory follow-up inspection in February found the violations cleared up.
+            <br><br>The university says they've hired a new dining services director.</b>
+          <p><br><br></p>
+          </div>
+        <div class="step" data-step="Cabrini College">
+            <b>In a bustling dining hall at Cabrini College, a Delaware County health inspector found a dead cockroach on the food service line and mouse droppings near the floor of the coffee bar in December.
+            <br><br>Health inspectors visited the dining hall four times this school year, also noting issues with dish sanitation and a dirty ice machine. In a follow up inspection this January, inspectors gave the cafeteria a clean report.</b>
+            <p><br><br></p>
+          </div>
+        <div class="step" data-step="University of Pennsylvania">
+            <b>At the University of Pennsylvania, two popular dining halls made headlines for health code violations last year.<br><br>
+              This year, during a routine February inspection at DIG UPenn, an inspector found the restaurant not in satisfactory compliance, with 17 violations, including nine serious public health violations.<br>
+              Among other issues at the facility, inspectors found undercooked chicken and evidence of mouse droppings.<br><br>
+              A spokesperson for UPenn said that although DIG is located on its campus, the restaurant leases its space. University-owned cafes have passed recent inspections, the spokesperson added.</b>
+            <p><br><br></p>
+          </div>
+        </article>
+      </section>
+
+      <section id="outro">
+        <div>PACKAGE WILL BE EMBEDDED HERE<br>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+
+        // update graphic based on step
+      //  sticky.querySelector("p").innerText = "";
+    //    sticky.querySelector("h1").innerText = "";
+      //  sticky.querySelector("h3").innerText = "";
+
+        // remove is-active from all steps
+        // then add is-active to this step
+        //steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        //sticky.querySelector("p").innerText = `${el.dataset.step}`;
+
+      }
+
+      function init() {
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
