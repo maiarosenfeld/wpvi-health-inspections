@@ -304,11 +304,15 @@
         </div>
 
         <div class="sticky-thing" style="background-color:#4968BF;">
-          <div style="min-height:2863px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/8pFaf/embed.js?v=6" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/8pFaf/full.png" alt="" /></noscript></div>
           <div class="bounce">
             <img class="arrow" src="https://github.com/maiarosenfeld/wpvi-health-inspections/blob/ae762df6339cc4925d068d1fe9702dd01b00445f/pngegg.png?raw=true"></img>
           </div>
                 </div>
+
+        <p class="intro__dek">
+          <div style="min-height:2863px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/8pFaf/embed.js?v=6" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/8pFaf/full.png" alt="" /></noscript></div>
+        </p>
+
         <article>
         <div class="step" data-step="INTRO">
             <b>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department. But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</b>
