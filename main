@@ -305,7 +305,7 @@
         </div>
 
         <p class="intro__hed">
-          <div style="min-height:2863px"><script defer src="https://datawrapper.dwcdn.net/8pFaf/embed.js?v=7" charset="utf-8"></script></div>
+          <div style="min-height:2863px"><script src="https://datawrapper.dwcdn.net/8pFaf/embed.js?v=7" charset="utf-8"></script></div>
         </p>
 
         <div class="sticky-thing" style="background-color:#4968BF;">
@@ -346,9 +346,8 @@
     </main>
 
     <!-- <div class='debug'></div> -->
-    <script defer src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script defer src="https://unpkg.com/scrollama"></script>
-    <script defer>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.js">
       var main = document.querySelector("main");
       var scrolly = main.querySelector("#scrolly");
       var sticky = scrolly.querySelector(".sticky-thing");
