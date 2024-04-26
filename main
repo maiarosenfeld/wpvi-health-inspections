@@ -340,28 +340,28 @@
         </div>
 
         <article style="background-color:#4968BF;">
-        <div class="step" data-step="INTRO">
+        <div class="step" data-step="">
             <c><br>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department.<br><br>But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</c>
             <p><br></p>
             </div>
-        <div class="step" data-step="West Chester University">
-          <b><br><br>At West Chester University dining facilities, critical violations included sinks missing hand soap, dented food cans that could lead to the growth of a deadly bacteria, and a refrigerator not cooling to code.
+        <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png">
+          <b><br>
+            <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png"></img>
+            <br>At West Chester University dining facilities, critical violations included sinks missing hand soap, dented food cans that could lead to the growth of a deadly bacteria, and a refrigerator not cooling to code.
             <br><br>On the same trip, inspectors also found evidence of flies in the dining hall kitchens. A mandatory follow-up inspection in February found the violations cleared up.
             <br><br>The university says they've hired a new dining services director.</b>
-            <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png"></img>
           </div>
-        <div class="step" data-step="Cabrini University">
-            <b>In a bustling dining hall at Cabrini University, a Delaware County health inspector found a dead cockroach on the food service line and mouse droppings near the floor of the coffee bar in December.
+        <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg">
+            <b><img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg"  width="400" height="200"></img><br>In a bustling dining hall at Cabrini University, a Delaware County health inspector found a dead cockroach on the food service line and mouse droppings near the floor of the coffee bar in December.
             <br><br>Health inspectors visited the dining hall four times this school year, also noting issues with dish sanitation and a dirty ice machine. In a follow up inspection this January, inspectors gave the cafeteria a clean report.</b>
             <p><br><br></p>
-            <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg"  width="300" height="200"></img>
+            
           </div>
-        <div class="step" data-step="University of Pennsylvania">
+        <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png">
             <b>At the University of Pennsylvania, two popular dining halls made headlines for health code violations last year.<br><br>
               This year, during a routine February inspection at DIG UPenn, an inspector found the restaurant not in satisfactory compliance, with 17 violations, including nine serious public health violations.<br>
               Among other issues at the facility, inspectors found undercooked chicken and evidence of mouse droppings.<br><br>
-              A spokesperson for UPenn said that although DIG is located on its campus, the restaurant leases its space. University-owned cafes have passed recent inspections, the spokesperson added.</b>
-            <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png" width="300" height="200"></img>
+              A spokesperson for UPenn said that although DIG is located on its campus, the restaurant leases its space. University-owned cafes have passed recent inspections, the spokesperson added. <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png" width="300" height="200"></img></b>
             <p><br><br></p>
           </div>
         </article>
