@@ -346,9 +346,8 @@
     </main>
 
     <!-- <div class='debug'></div> -->
-    <script src="https://unpkg.com/intersection-observer"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-    <script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama">
       var main = document.querySelector("main");
       var scrolly = main.querySelector("#scrolly");
       var sticky = scrolly.querySelector(".sticky-thing");
