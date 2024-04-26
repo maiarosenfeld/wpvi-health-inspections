@@ -365,9 +365,9 @@
           <div class="bounce">
             <img class="arrow" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/pngegg.png"></img>
           </div>
-
-        <article style="background-color:#4968BF;">
-        <div class="step" data-step="">
+        <article class="sticky-thing" style="background-color:#4968BF;">
+          <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png"></img>
+        <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png"">
             <c><br>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department.<br><br>But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</c>
             <p><br></p>
             </div>
@@ -838,6 +838,7 @@
 
         el.classList.add('is-active');
 
+        sticky.querySelector("img").source = el.dataset.step;
       }
 
       function init() {
