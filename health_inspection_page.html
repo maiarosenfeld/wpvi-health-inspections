@@ -509,7 +509,19 @@ nav {
       </footer>
     
     </main>
+    
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // DOM - document object model
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
 
+      
 (function (global, factory) {
         typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
         typeof define === 'function' && define.amd ? define(factory) :
@@ -926,18 +938,7 @@ nav {
     return scrollama;
 
 })));
-    
-    <!-- <div class='debug'></div> -->
-    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script src="https://unpkg.com/scrollama"></script>
-    <script>
-      // DOM - document object model
-      var main = document.querySelector("main");
-      var scrolly = main.querySelector("#scrolly");
-      var sticky = scrolly.querySelector(".sticky-thing");
-      var article = scrolly.querySelector("article");
-      var steps = article.querySelectorAll(".step");
-
+      
       // initialize the scrollama
       var scroller = scrollama();
 
