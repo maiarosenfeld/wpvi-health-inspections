@@ -215,7 +215,7 @@
 }
 
 .bounce logo {
- position:sticky;
+ position:fixed;
  left:50%;
  margin-left:-25px;
  -webkit-animation:bounce 1s infinite;
