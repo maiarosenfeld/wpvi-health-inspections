@@ -214,39 +214,10 @@
  100%     {bottom:30;}
 }
 
-.bounce logo {
+.logo {
  position:fixed;
  left:50%;
  margin-left:-25px;
- -webkit-animation:bounce 1s infinite;
- -moz-animation:bounce 1s infinite;
- -o-animation:bounce 1s infinite;
- animation:bounce 1s infinite;
-
-}
-
-@-webkit-keyframes bounce logo {
- 0%       { bottom:150px; }
- 50%      { bottom:155px; }
- 100%     {bottom:160;}
-}
-
-@-moz-keyframes bounce logo {
- 0%       { bottom:150px; }
- 50%      { bottom:155px; }
- 100%     {bottom:160;}
-}
-
-@-o-keyframes bounce logo {
- 0%       { bottom:150px; }
- 50%      { bottom:155px; }
- 100%     {bottom:160;}
-}
-
-@keyframes bounce logo {
- 0%       { bottom:150px; }
- 50%      { bottom:155px; }
- 100%     {bottom:160;}
 }
 
 #videowrapper{
@@ -383,8 +354,8 @@
             </div>
         <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png">
           <b><br>
-          <div class="bounce">
-            <logo><img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png"></img></logo>
+          <div class="logo">
+            <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png"></img>
           </div>
             <br>At West Chester University dining facilities, critical violations included sinks missing hand soap, dented food cans that could lead to the growth of a deadly bacteria, and a refrigerator not cooling to code.
             <br><br>On the same trip, inspectors also found evidence of flies in the dining hall kitchens. A mandatory follow-up inspection in February found the violations cleared up.
@@ -394,8 +365,8 @@
           <b><br>
             Camden County Health Inspector Joanna Baron says these types of violations could put guests at risk.<br>
             <br>"A refrigerator that doesn't work is more like an incubator for growing pathogens," Baron said. "Seeing that the handwash sink is not working, so no hand hygiene is happening in the restaurant, that is an immediate closure."<br>
-          <div class="bounce">
-            <logo><img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg"  width="200" height="100"></img></logo>
+          <div class="logo">
+            <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg"  width="200" height="100"></img>
           </div>
           <br><br>In a bustling dining hall at Cabrini University, a Delaware County health inspector found a dead cockroach on the food service line and mouse droppings near the floor of the coffee bar in December.
             <br><br>Health inspectors visited the dining hall four times this school year, also noting issues with dish sanitation and a dirty ice machine. In a follow up inspection this January, inspectors gave the cafeteria a clean report.</b>
@@ -403,8 +374,8 @@
           </div>
         <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png">
             <b><br>
-            <div class="bounce">
-            <logo><img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png" width="300" height="200"></img></logo>
+            <div class="logo">
+              <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png" width="300" height="200"></img>
             </div>
               At the University of Pennsylvania, two popular dining halls made headlines for health code violations last year.<br><br>
               This year, during a routine February inspection at DIG UPenn, an inspector found the restaurant not in satisfactory compliance, with 17 violations, including nine serious public health violations.<br>
