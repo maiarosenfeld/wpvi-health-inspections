@@ -347,7 +347,8 @@
 
     <!-- <div class='debug'></div> -->
     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
-    <script src="https://unpkg.com/scrollama">
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
       var main = document.querySelector("main");
       var scrolly = main.querySelector("#scrolly");
       var sticky = scrolly.querySelector(".sticky-thing");
@@ -364,7 +365,7 @@
 
         // update graphic based on step
       //  sticky.querySelector("p").innerText = "";
-    //    sticky.querySelector("h1").innerText = "";
+      //    sticky.querySelector("h1").innerText = "";
       //  sticky.querySelector("h3").innerText = "";
 
         // remove is-active from all steps
