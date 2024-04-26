@@ -355,33 +355,16 @@
       var article = scrolly.querySelector("article");
       var steps = article.querySelectorAll(".step");
 
-      // initialize the scrollama
       var scroller = scrollama();
 
-      // scrollama event handlers
       function handleStepEnter(response) {
-        // response = { element, direction, index }
         var el = response.element;
 
-        // update graphic based on step
-      //  sticky.querySelector("p").innerText = "";
-      //    sticky.querySelector("h1").innerText = "";
-      //  sticky.querySelector("h3").innerText = "";
-
-        // remove is-active from all steps
-        // then add is-active to this step
-        //steps.forEach(step => step.classList.remove('is-active'));
         el.classList.add('is-active');
-
-        // update graphic based on step
-        //sticky.querySelector("p").innerText = `${el.dataset.step}`;
 
       }
 
       function init() {
-        // 2. setup the scroller passing options
-        // 		this will also initialize trigger observations
-        // 3. bind scrollama event handlers (this can be chained like below)
         scroller
           .setup({
             step: "#scrolly article .step",
@@ -390,7 +373,6 @@
           })
           .onStepEnter(handleStepEnter);
 
-        // setup resize event
         window.addEventListener("resize", scroller.resize);
       }
 
