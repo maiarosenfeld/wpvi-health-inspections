@@ -137,6 +137,30 @@
           Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
       }
 
+    .step c {
+        text-align: center;
+        padding: 0rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active c {
+        text-align: center;
+        align-items: center;
+        padding: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+
       .step:last-child {
         margin-bottom: 20;
       }
@@ -311,7 +335,7 @@
 
         <article style="background-color:#4968BF;">
         <div class="step" data-step="INTRO">
-            <b>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department. But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</b>
+            <c>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department. But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</c>
             <p><br></p>
             </div>
         <div class="step" data-step="West Chester University">
