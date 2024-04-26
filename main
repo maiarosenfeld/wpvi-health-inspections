@@ -225,6 +225,30 @@
 
 }
 
+@-webkit-keyframes bounce logo {
+ 0%       { bottom:50px; }
+ 50%      { bottom:100px; }
+ 100%     {bottom:150;}
+}
+
+@-moz-keyframes bounce logo {
+ 0%       { bottom:50px; }
+ 50%      { bottom:100px; }
+ 100%     {bottom:150;}
+}
+
+@-o-keyframes bounce logo {
+ 0%       { bottom:50px; }
+ 50%      { bottom:100px; }
+ 100%     {bottom:150;}
+}
+
+@keyframes bounce logo {
+ 0%       { bottom:50px; }
+ 50%      { bottom:100px; }
+ 100%     {bottom:150;}
+}
+
 #videowrapper{
     position: relative;
     overflow: hidden;
