@@ -317,7 +317,7 @@
             <p><br>But health inspections show they aren't always up to code.<br></p>
             </div>
           <div class="step" data-step="">
-            <p><br>Our investigation found serious violations at dining halls, restaurants and other food vendors on several local campuses.<br></p>
+            <p><br>A 6abc investigation found serious violations at dining halls, restaurants and other food vendors on several local campuses.<br></p>
             </div>
           <div class="step" data-step="">
             <p><br>Search a school in the table below to see recent health code violations at its dining facilities.<br><br></p>
@@ -333,9 +333,13 @@
 </script>
         </p>
 
+<div class="bounce">
+          <img class="arrow" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/pngegg.png"></img>
+        </div>
+
         <article style="background-color:#4968BF;">
         <div class="step" data-step="INTRO">
-            <c><br>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department.<br>But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</c>
+            <c><br>Thousands of students dine at food halls and at on-campus restaurants everyday. And just like other eateries, these must pass annual inspections by the local health department.<br><br>But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</c>
             <p><br></p>
             </div>
         <div class="step" data-step="West Chester University">
