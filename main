@@ -354,9 +354,9 @@
 </script>
         </p>
 
-<div class="bounce">
-          <img class="arrow" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/pngegg.png"></img>
-        </div>
+          <div class="bounce">
+            <img class="arrow" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/pngegg.png"></img>
+          </div>
 
         <article style="background-color:#4968BF;">
         <div class="step" data-step="">
