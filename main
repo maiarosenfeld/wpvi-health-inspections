@@ -835,8 +835,6 @@
         var el = response.element;
 
         el.classList.add('is-active');
-
-        sticky.querySelector("img").source = el.dataset.step;
       }
 
       function init() {
