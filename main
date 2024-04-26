@@ -215,7 +215,7 @@
 }
 
 .bounce logo {
- position:relative;
+ position:sticky;
  left:50%;
  margin-left:-25px;
  -webkit-animation:bounce 1s infinite;
@@ -364,7 +364,7 @@
           </div>
             <br>At West Chester University dining facilities, critical violations included sinks missing hand soap, dented food cans that could lead to the growth of a deadly bacteria, and a refrigerator not cooling to code.
             <br><br>On the same trip, inspectors also found evidence of flies in the dining hall kitchens. A mandatory follow-up inspection in February found the violations cleared up.
-            <br><br>The university says they've hired a new dining services director.</b>
+            <br><br>The university says they've hired a new dining services director.<br></b>
           </div>
         <div class="step" data-step="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg">
           <b><br>
