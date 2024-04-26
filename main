@@ -10,7 +10,8 @@
     <style>
       #scrolly {
         position: relative;
-        padding: 0rem;
+        background-color: #f3f3f3;
+        padding: 1rem;
       }
 
       article {
