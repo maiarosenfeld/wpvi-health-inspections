@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Health Inspections Page</title>
+    <meta name="description" content="Scrollama: Sticky Overlay Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+      #scrolly {
+        position: relative;
+        padding: 0rem;
+      }
+
+      article {
+        position: relative;
+        padding: 0;
+        max-width: 200rem;
+        margin: 0;
+        width: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+        top: 12.5vh;
+        height: 100vh;
+        /* Center everything inside */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sticky-thing p {
+        font-size: calc(18px + 3vw);
+        font-weight: 900;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing h1 {
+        font-size: calc(10px + 2vw);
+        font-weight: 500;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing h3 {
+        font-size: 2rem;
+        font-weight: 200;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .sticky-thing text {
+        font-size: 3rem;
+        font-weight: 300;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step {
+        margin: 0 auto 0rem auto;
+        margin-bottom: 5rem; /*this is new*/
+        color: #fff;
+      }
+
+      .step h2 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: left;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active h2 {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: left;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step p {
+        text-align: center;
+        padding: 0rem;
+        font-weight: 300;
+        font-size: 2rem;
+        background-color: inherit;
+        color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step a {
+        text-align: center;
+        padding: 0rem;
+        font-weight: 300;
+        font-size: 2rem;
+        background-color: inherit;
+        color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active p {
+        /* background-color: inherit; */
+        /* color: #fff; */
+        color: #fff;
+        font-weight: 300;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active a {
+        /* background-color: inherit; */
+        /* color: #fff; */
+        color: #3FBFD8;
+        font-weight: 300;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step img {
+        opacity: 0
+      }
+
+      .step.is-active img {
+        opacity: 1
+      }
+      
+      .step b {
+        text-align: center;
+        padding: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step.is-active b {
+        text-align: center;
+        align-items: center;
+        padding: 0rem;
+        font-weight: 400;
+        font-size: 2.5rem;
+        background-color: inherit;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen,
+          Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      }
+
+      .step:last-child {
+        margin-bottom: 30;
+      }
+
+      @-webkit-keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+@-moz-keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+@-o-keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+@keyframes bounce {
+ 0%       { bottom:0px; }
+ 50%      { bottom:15px; }
+ 100%     {bottom:30;}
+}
+
+#videowrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+#fullScreenDiv{
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+    margin: 10;
+    position: relative;
+}
+
+#video{
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: block;
+    filter: brightness(70%);
+}
+@media (min-aspect-ratio: 16/9) {
+  #video{
+    width: 100vw;
+    height:auto;
+    filter: brightness(70%);
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    height: 100vh;
+    width:auto;
+    margin-left: 50vw;
+    transform: translate(-50%);
+    filter: brightness(70%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .sticky-thing p {
+        font-size: 2rem;
+    }
+  
+      .sticky-thing h1 {
+        font-size: 1rem;
+    }
+}
+
+#videoMessage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.intro__hed {
+  font-size: 2em;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.intro__dek {
+  color: #8a8a8a;
+}
+
+#intro {
+  margin-bottom: 320px;
+}
+
+#outro {
+  height: 640px;
+}
+
+
+.abovethefold {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+  font-size: 2rem
+}
+
+.backgroundvid {
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   z-index: -2;
+}
+
+.arrow {
+        height:70px;
+        width:70px;
+        z-index: -2;
+      }
+
+      .bounce {
+ position:fixed;
+ left:50%;
+ bottom:0;
+ margin-top:-20px;
+ margin-left:-25px;
+ height:50px;
+ width:50px;
+ -webkit-animation:bounce 1s infinite;
+ -moz-animation:bounce 1s infinite;
+ -o-animation:bounce 1s infinite;
+ animation:bounce 1s infinite;
+
+}
+
+.innerarrow {
+      width: 70px;
+      margin: auto;
+   }
+
+   .container {
+   background: #0B004A;
+   z-index: -3;
+   width: 100%;
+} 
+
+.scrolly_sections {
+  background: #0B004A;
+  color: #fff;
+}
+
+p {
+  padding: 0px;
+}
+
+.non_scrolly {
+  padding: 0px;
+  background: #fff;
+}
+
+
+footer {
+  background: #0B004A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 1280px;
+  color: #3b3b3b;
+  font-size: 24px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover {
+  color: teal;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #f3f3f3;
+  padding: 1rem;
+  padding-right: 5rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.nav__examples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.nav__examples > * {
+  margin-right: 0.5rem;
+}
+
+#intro {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.intro__hed {
+  font-size: 2em;
+  margin: 2rem auto 0.5rem auto;
+}
+
+.intro__dek {
+  color: #8a8a8a;
+}
+
+#intro {
+  margin-bottom: 320px;
+}
+
+#outro {
+  height: 640px;
+}
+
+@media (min-width: 840px) {
+  .nav__examples {
+    margin-top: 0;
+    margin-left: 2rem;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(-0.1vw, 0vw) rotate(-1deg); }
+  10% { transform: translate(-0.3vw, 0vw) rotate(0deg); }
+  20% { transform: translate(0.3vw, 0vw) rotate(-1deg); }
+  30% { transform: translate(-0.1vw, 0vw) rotate(1deg); }
+  40% { transform: translate(0.1vw, 0vw) rotate(0deg); }
+  50% { transform: translate(-0.1vw, 0vw) rotate(-1deg); }
+  60% { transform: translate(-0.3vw, 0vw) rotate(0deg); }
+  70% { transform: translate(0.3vw, 0vw) rotate(-1deg); }
+  80% { transform: translate(-0.1vw, 0vw) rotate(1deg); }
+  90% { transform: translate(0.1vw, 0vw) rotate(0deg); }
+  100% { transform: translate(0.1vw, 0vw) rotate(-1deg); }
+}
+
+.shake {
+  animation: shake 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.desktop-bg video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+   }
+
+.mobile-bg {
+   display: none;
+}    
+
+   .mobile-bg img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+   }
+
+
+@media only screen and (max-width: 900px) {
+
+.mobile-bg {
+   display: block;
+}  
+
+.desktop-bg {
+   display: none;
+}
+
+}
+   
+    </style>
+  </head>
+
+  <body>
+    <main>
+
+      
+
+      <div class="abovethefold">
+        <div class="backgroundvid desktop-bg">
+        <!-- <section id="scrolly">
+        <div id="videowrapper">
+          <div id="fullScreenDiv"> -->
+            <video id="video" role="presentation" muted autoplay loop preload="auto" class="blur">
+              <source src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/AdobeStock_367005223.webm" type="video/webm">
+                      </video>
+                    </div>
+                    <div class="backgroundvid mobile-bg">
+                      <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/AdobeStock_367005223.gif"></img>
+                  </div>
+                      <div id="videoMessage" class="sticky-thing">
+                        <p>University Dining Facilities Plagued With Health Violations</p>
+                        <h1>Food safety inspections show many local college and university food vendors have health code violations that could make students sick.</h1>
+                      </div>
+              </div>
+          </div>
+
+      <section id="scrolly" class="scrolly_sections">
+        
+        <div class="arrow bounce">
+              <img class="innerarrow" src="https://github.com/maiarosenfeld/wpvi-health-inspections/blob/ae762df6339cc4925d068d1fe9702dd01b00445f/pngegg.png?raw=true"></img>
+            </div>
+        
+        <div>
+          <p>
+          Investigative Reporter: Chad Pradelli<br>Investigative Producer: Cheryl Mettendorf<br>Data Journalist & Web Developer: Maia Rosenfeld
+          </p>
+          </div>
+          <br><br><br><br><br>
+
+        <article>
+          <div class="step" data-step="">
+            <p>Philadelphia area universities offer students a variety of dining options.</p>
+            </div>
+          <div class="step" data-step="">
+            <p>But health inspections show they aren't always up to code.</p>
+            </div>
+          <div class="step" data-step="">
+            <p>Our investigation found serious violations at dining halls, restaurants and other food vendors on several local campuses.</p>
+            </div>
+          <div class="step" data-step="">
+            <p>Search a school in the table below to see recent health code violations at its dining facilities.<p></div><br>
+        </article>
+      </section>
+
+      <div class="non_scrolly">
+      <p class="intro__dek">
+        <br>
+         <iframe title="University Dining Health Code Violations" aria-label="Table" id="datawrapper-chart-apX0J" src="https://datawrapper.dwcdn.net/apX0J/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="5263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+      </p>
+      <br>
+    </div>
+    
+    <section id="scrolly" class="scrolly_sections">
+      
+      <article>
+        <br><br>
+        <div class="step" data-step="INTRO">
+          <p>Thousands of students dine at food halls and on-campus restaurants every day. And just like other eateries, these must pass annual inspections by the local health department. But a 6abc analysis found some dining spots have been cited for violations that could potentially get students sick.</p>
+          </div>
+          <div class="step" data-step="West Chester University" style="text-align: center">
+            <br><img class="shake" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/WCU%20logo.png" height=150 width=200></img><br><br>
+            <p>At West Chester University dining facilities, critical violations included <a href="https://github.com/maiarosenfeld/wpvi-health-inspections/raw/main/WCU%20Chickie%20%26%20Pete's%20Einstein%20Brothers%20Bagels">sinks missing hand soap</a>, dented food cans that could lead to the growth of a deadly bacteria, and a <a href="https://github.com/maiarosenfeld/wpvi-health-inspections/raw/main/WCU%20Commons%2C%20Freshens%20%26%20Rammy's%20Market.pdf">refrigerator not cooling to code</a>.</p><br>
+          <p>On the same trip, inspectors also found evidence of flies in the dining hall kitchens. A mandatory <a href="https://github.com/maiarosenfeld/wpvi-health-inspections/raw/main/WCU%20Commons%2C%20Freshens%20%26%20Rammy's%20Market%20-%20Follow-Up.pdf">follow-up inspection</a> in February found the violations <a href="https://github.com/maiarosenfeld/wpvi-health-inspections/raw/main/WCU%20Chickie%20%26%20Pete's%20Einstein%20Brothers%20Bagels%20-%20Follow-Up">cleared up</a>.</p><br>
+        <p>The university says they've hired a new dining services director.</p><br>
+            </div>
+          <div class="step" data-step="Health Inspector">
+              <p>Camden County Health Inspector Joanna Barron says these types of violations could put guests at risk.</p><br>
+              <p>"A refrigerator that doesn't work is more like an incubator for growing pathogens," Barron said. "Seeing that the handwash sink is not working, so no hand hygiene is happening in the restaurant, that is an immediate closure."</p><br>
+          </div>
+          <div class="step" data-step="Cabrini University" style="text-align: center">
+              <br><img class="shake" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/Cabrini%20Logo.jpeg" height=100 width=250></img><br><br>
+              <p>In a bustling dining hall at Cabrini University, <a href="https://public.cdpehs.com/ILENVPBL/ESTABLISHMENT/ShowViolationTablePage.aspx?ESTABLISHMENT=78266&ESTTST_CTY=np3R3XE8q8w%3d&VIOLATION_INSPECTION=484630&INSPECTION_NN=484630">a Delaware County health inspector found</a> a dead cockroach on the food service line and mouse droppings near the floor of the coffee bar in December.</p><br>
+              <p>Health inspectors visited the dining hall four times this school year, also noting <a href="https://public.cdpehs.com/ILENVPBL/ESTABLISHMENT/ShowViolationTablePage.aspx?ESTABLISHMENT=78266&ESTTST_CTY=np3R3XE8q8w%3d&VIOLATION_INSPECTION=474975&INSPECTION_NN=474975">issues with dish sanitation</a> and a <a href="https://public.cdpehs.com/ILENVPBL/ESTABLISHMENT/ShowViolationTablePage.aspx?ESTABLISHMENT=78266&ESTTST_CTY=np3R3XE8q8w%3d&VIOLATION_INSPECTION=478823&INSPECTION_NN=478823">dirty ice machine</a>, which Barron says is a serious violation. In a follow up inspection this January, inspectors gave the cafeteria a clean report.</p>
+              <br>
+            </div>
+          <div class="step" data-step="University of Pennsylvania" style="text-align: center">
+              <img class="shake" src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/UPenn%20Logo.png" height=150 width=200></img><br>
+              <p>At the University of Pennsylvania, two popular dining halls made headlines for health code violations last year.</p><br>
+              <p>This year, during <a href="https://philadelphia-pa.healthinspections.us/_templates/551/RetailFood/_report_full.cfm?inspectionID=376A6487-9EDF-FE47-0581AC3BCB0D2734&domainID=551&userID=0">a routine February inspection</a> at DIG UPenn, an inspector found the restaurant not in satisfactory compliance, with 17 violations, including nine serious public health violations. Among other issues at the facility, inspectors found undercooked chicken and evidence of mouse droppings.</p><br>
+              </div>
+         <div class="step" data-step="University of Pennsylvania 2" style="text-align: center">
+              <p>"Unmanaged pests means there has been a serious breakdown in maintenance or care or cleaning of the facility," Barron said.</p><br><br>
+              <p>A spokesperson for UPenn said that although DIG is located on its campus, the restaurant leases its space. University-owned eateries have passed recent inspections, the spokesperson added.</p>
+              <p><br>But <a href='https://www.thedp.com/article/2024/01/roach-glass-maggot-penn-dining-halls-sighting'>an article</a> in the The Daily Pennsylvanian early this year claimed that students eating at university dining halls discovered a cockroach, a maggot and a piece of glass in their food.</p>
+            </div>
+          <div class="step" data-step="Final" style="text-align: center">
+              <p>Barron said health inspectors hunt for these under-the-radar violations, which can hide beneath the facade of a clean report.</p>
+              <br><br><p>"They're looking for clues," she said. "They're trying to figure out what is actually happening when they're not there."</p>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </div>
+          </article>
+        </section>
+      
+        <div class="non_scrolly">
+          <p></p>
+        </div>
+
+    
+          <!-- <section id="outro">
+            <div>
+            </div>
+          </section> -->
+    
+    </main>
+
+    
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+      // DOM - document object model
+      var main = document.querySelector("main");
+      var scrolly = main.querySelector("#scrolly");
+      var sticky = scrolly.querySelector(".sticky-thing");
+      var article = scrolly.querySelector("article");
+      var steps = article.querySelectorAll(".step");
+
+      
+(function (global, factory) {
+        typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+        typeof define === 'function' && define.amd ? define(factory) :
+        (global = global || self, global.scrollama = factory());
+      }(this, (function () { 'use strict';
+
+        // DOM helper functions
+
+        // public
+        function selectAll(selector, parent = document) {
+          if (typeof selector === 'string') {
+            return Array.from(parent.querySelectorAll(selector));
+          } else if (selector instanceof Element) {
+            return [selector];
+          } else if (selector instanceof NodeList) {
+            return Array.from(selector);
+          } else if (selector instanceof Array) {
+            return selector;
+          }
+          return [];
+    }
+
+    // SETUP
+    function create(className) {
+      const el = document.createElement("div");
+      el.className = `scrollama__debug-step ${className}`;
+      el.style.position = "fixed";
+      el.style.left = "0";
+      el.style.width = "100%";
+      el.style.zIndex = "9999";
+      el.style.borderTop = "2px solid black";
+      el.style.borderBottom = "2px solid black";
+
+      const p = document.createElement("p");
+      p.style.position = "absolute";
+      p.style.left = "0";
+      p.style.height = "1px";
+      p.style.width = "100%";
+      p.style.borderTop = "1px dashed black";
+
+      el.appendChild(p);
+      document.body.appendChild(el);
+      return el;
+    }
+
+    // UPDATE
+    function update({ id, step, marginTop }) {
+      const { index, height } = step;
+      const className = `scrollama__debug-step--${id}-${index}`;
+      let el = document.querySelector(`.${className}`);
+      if (!el) el = create(className);
+
+      el.style.top = `${marginTop * -1}px`;
+      el.style.height = `${height}px`;
+      el.querySelector("p").style.top = `${height / 2}px`;
+    }
+
+    function generateId() {
+        const alphabet = "abcdefghijklmnopqrstuvwxyz";
+        const date = Date.now();
+        const result = [];
+        for (let i = 0; i < 6; i += 1) {
+          const char = alphabet[Math.floor(Math.random() * alphabet.length)];
+          result.push(char);
+        }
+        return `${result.join("")}${date}`;
+      }
+
+    function err$1(msg) {
+      console.error(`scrollama error: ${msg}`);
+    }
+
+    function getIndex(node) {
+      return +node.getAttribute("data-scrollama-index");
+    }
+
+    function createProgressThreshold(height, threshold) {
+        const count = Math.ceil(height / threshold);
+        const t = [];
+        const ratio = 1 / count;
+        for (let i = 0; i < count + 1; i += 1) {
+          t.push(i * ratio);
+        }
+        return t;
+      }
+
+    function parseOffset(x) {
+      if (typeof x === "string" && x.indexOf("px") > 0) {
+        const v = +x.replace("px", "");
+        if (!isNaN(v)) return { format: "pixels", value: v };
+        else {
+          err("offset value must be in 'px' format. Fallback to 0.5.");
+          return { format: "percent", value: 0.5 };
+        }
+      } else if (typeof x === "number" || !isNaN(+x)) {
+        if (x > 1) err("offset value is greater than 1. Fallback to 1.");
+        if (x < 0) err("offset value is lower than 0. Fallback to 0.");
+        return { format: "percent", value: Math.min(Math.max(0, x), 1) };
+      }
+      return null;
+    }
+
+    function indexSteps(steps) {
+      steps.forEach((step) =>
+        step.node.setAttribute("data-scrollama-index", step.index)
+      );
+    }
+
+    function getOffsetTop(node) {
+      const { top } = node.getBoundingClientRect();
+      const scrollTop = window.pageYOffset;
+      const clientTop = document.body.clientTop || 0;
+      return top + scrollTop - clientTop;
+    }
+
+    let currentScrollY;
+    let comparisonScrollY;
+    let direction;
+
+    function onScroll(container) {
+      const scrollTop = container ? container.scrollTop : window.pageYOffset;
+
+      if (currentScrollY === scrollTop) return;
+      currentScrollY = scrollTop;
+      if (currentScrollY > comparisonScrollY) direction = "down";
+      else if (currentScrollY < comparisonScrollY) direction = "up";
+      comparisonScrollY = currentScrollY;
+    }
+
+    function setupScroll(container) {
+      currentScrollY = 0;
+      comparisonScrollY = 0;
+      document.addEventListener("scroll", () => onScroll(container));
+    }
+
+    function scrollama() {
+      let cb = {};
+
+      let id = generateId();
+      let steps = [];
+      let globalOffset;
+      let containerElement;
+      let rootElement;
+
+      let progressThreshold = 0;
+
+      let isEnabled = false;
+      let isProgress = false;
+      let isDebug = false;
+      let isTriggerOnce = false;
+
+      let exclude = [];
+
+      /* HELPERS */
+      function reset() {
+        cb = {
+          stepEnter: () => { },
+          stepExit: () => { },
+          stepProgress: () => { },
+        };
+        exclude = [];
+      }
+
+      function handleEnable(shouldEnable) {
+        if (shouldEnable && !isEnabled) updateObservers();
+        if (!shouldEnable && isEnabled) disconnectObservers();
+        isEnabled = shouldEnable;
+      }
+
+      /* NOTIFY CALLBACKS */
+      function notifyProgress(element, progress) {
+        const index = getIndex(element);
+        const step = steps[index];
+        if (progress !== undefined) step.progress = progress;
+        const response = { element, index, progress, direction };
+        if (step.state === "enter") cb.stepProgress(response);
+      }
+
+      function notifyStepEnter(element, check = true) {
+        const index = getIndex(element);
+        const step = steps[index];
+        const response = { element, index, direction };
+
+        step.direction = direction;
+        step.state = "enter";
+
+        // if (isPreserveOrder && check && direction !== "up")
+        //   notifyOthers(index, "above");
+        // if (isPreserveOrder && check && direction === "up")
+        //   notifyOthers(index, "below");
+
+        if (!exclude[index]) cb.stepEnter(response);
+        if (isTriggerOnce) exclude[index] = true;
+      }
+
+      function notifyStepExit(element, check = true) {
+        const index = getIndex(element);
+        const step = steps[index];
+
+        if (!step.state) return false;
+
+        const response = { element, index, direction };
+
+        if (isProgress) {
+          if (direction === "down" && step.progress < 1) notifyProgress(element, 1);
+          else if (direction === "up" && step.progress > 0)
+            notifyProgress(element, 0);
+        }
+
+        step.direction = direction;
+        step.state = "exit";
+
+        cb.stepExit(response);
+      }
+
+      /* OBSERVERS - HANDLING */
+      function resizeStep([entry]) {
+        const index = getIndex(entry.target);
+        const step = steps[index];
+        const h = entry.target.offsetHeight;
+        if (h !== step.height) {
+          step.height = h;
+          disconnectObserver(step);
+          updateStepObserver(step);
+          updateResizeObserver(step);
+        }
+      }
+
+      function intersectStep([entry]) {
+        onScroll(containerElement);
+
+        const { isIntersecting, target } = entry;
+        if (isIntersecting) notifyStepEnter(target);
+        else notifyStepExit(target);
+      }
+
+      function intersectProgress([entry]) {
+        const index = getIndex(entry.target);
+        const step = steps[index];
+        const { isIntersecting, intersectionRatio, target } = entry;
+        if (isIntersecting && step.state === "enter")
+          notifyProgress(target, intersectionRatio);
+      }
+
+      /*  OBSERVERS - CREATION */
+      function disconnectObserver({ observers }) {
+        Object.keys(observers).map((name) => {
+          observers[name].disconnect();
+        });
+      }
+
+      function disconnectObservers() {
+        steps.forEach(disconnectObserver);
+      }
+
+      function updateResizeObserver(step) {
+        const observer = new ResizeObserver(resizeStep);
+        observer.observe(step.node);
+        step.observers.resize = observer;
+      }
+
+      function updateResizeObservers() {
+        steps.forEach(updateResizeObserver);
+      }
+
+      function updateStepObserver(step) {
+        const h = window.innerHeight;
+        const off = step.offset || globalOffset;
+        const factor = off.format === "pixels" ? 1 : h;
+        const offset = off.value * factor;
+        const marginTop = step.height / 2 - offset;
+        const marginBottom = step.height / 2 - (h - offset);
+        const rootMargin = `${marginTop}px 0px ${marginBottom}px 0px`;
+        const root = rootElement;
+
+        const threshold = 0.5;
+        const options = { rootMargin, threshold, root };
+        const observer = new IntersectionObserver(intersectStep, options);
+
+        observer.observe(step.node);
+        step.observers.step = observer;
+
+        if (isDebug) update({ id, step, marginTop, marginBottom });
+      }
+
+      function updateStepObservers() {
+        steps.forEach(updateStepObserver);
+      }
+
+      function updateProgressObserver(step) {
+        const h = window.innerHeight;
+        const off = step.offset || globalOffset;
+        const factor = off.format === "pixels" ? 1 : h;
+        const offset = off.value * factor;
+        const marginTop = -offset + step.height;
+        const marginBottom = offset - h;
+        const rootMargin = `${marginTop}px 0px ${marginBottom}px 0px`;
+
+        const threshold = createProgressThreshold(step.height, progressThreshold);
+        const options = { rootMargin, threshold };
+        const observer = new IntersectionObserver(intersectProgress, options);
+
+        observer.observe(step.node);
+        step.observers.progress = observer;
+      }
+
+      function updateProgressObservers() {
+        steps.forEach(updateProgressObserver);
+      }
+
+      function updateObservers() {
+        disconnectObservers();
+        updateResizeObservers();
+        updateStepObservers();
+        if (isProgress) updateProgressObservers();
+      }
+
+      /* SETUP */
+      const S = {};
+
+      S.setup = ({
+        step,
+        parent,
+        offset = 0.5,
+        threshold = 4,
+        progress = false,
+        once = false,
+        debug = false,
+        container = undefined,
+        root = null
+      }) => {
+
+        setupScroll(container);
+
+        steps = selectAll(step, parent).map((node, index) => ({
+          index,
+          direction: undefined,
+          height: node.offsetHeight,
+          node,
+          observers: {},
+          offset: parseOffset(node.dataset.offset),
+          top: getOffsetTop(node),
+          progress: 0,
+          state: undefined,
+        }));
+
+        if (!steps.length) {
+          err$1("no step elements");
+          return S;
+        }
+
+        isProgress = progress;
+        isTriggerOnce = once;
+        isDebug = debug;
+        progressThreshold = Math.max(1, +threshold);
+        globalOffset = parseOffset(offset);
+        containerElement = container;
+        rootElement = root;
+
+        reset();
+        indexSteps(steps);
+        handleEnable(true);
+        return S;
+      };
+
+      S.enable = () => {
+        handleEnable(true);
+        return S;
+      };
+
+      S.disable = () => {
+        handleEnable(false);
+        return S;
+      };
+
+      S.destroy = () => {
+        handleEnable(false);
+        reset();
+        return S;
+      };
+
+      S.resize = () => {
+        updateObservers();
+        return S;
+      };
+
+      S.offset = (x) => {
+        if (x === null || x === undefined) return globalOffset.value;
+        globalOffset = parseOffset(x);
+        updateObservers();
+        return S;
+      };
+
+      S.onStepEnter = (f) => {
+        if (typeof f === "function") cb.stepEnter = f;
+        else err$1("onStepEnter requires a function");
+        return S;
+      };
+
+      S.onStepExit = (f) => {
+        if (typeof f === "function") cb.stepExit = f;
+        else err$1("onStepExit requires a function");
+        return S;
+      };
+
+      S.onStepProgress = (f) => {
+        if (typeof f === "function") cb.stepProgress = f;
+        else err$1("onStepProgress requires a function");
+        return S;
+      };
+      return S;
+    }
+
+    return scrollama;
+
+})));
+      
+      // initialize the scrollama
+      var scroller = scrollama();
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        // response = { element, direction, index }
+        var el = response.element;
+        console.log(el);
+        
+        // remove is-active from all steps
+        // then add is-active to this step
+        // steps.forEach(step => step.classList.remove('is-active'));
+        el.classList.add('is-active');
+
+        // update graphic based on step
+        // use "template literals" with backticks
+        // sticky.querySelector("p").innerText = `Step number ${el.dataset.step}`;
+        // sticky.style.backgroundColor = el.dataset.color;
+        // sticky.querySelector("p").style.fontSize = `${el.dataset.step}rem`;
+      }
+
+      function init() {
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.5,
+            debug: false
+          })
+          .onStepEnter(handleStepEnter);
+
+        // setup resize event
+        window.addEventListener("resize", scroller.resize);
+      }
+
+      // kick things off
+      init();
+    </script>
+  </body>
+</html>
