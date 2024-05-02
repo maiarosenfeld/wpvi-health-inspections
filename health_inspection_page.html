@@ -467,7 +467,36 @@ nav {
   animation: shake 2.5s;
   animation-iteration-count: infinite;
 }
-   
+
+.desktop-bg video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+   }
+
+.mobile-bg {
+   display: none;
+}    
+
+.mobile-bg img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+   }
+
+
+@media only screen and (max-width: 900px) {
+
+.mobile-bg {
+   display: block;
+}  
+
+.desktop-bg {
+   display: none;
+}
+
+}
+      
     </style>
   </head>
 
@@ -476,19 +505,24 @@ nav {
 
       
 
-      <div class="abovethefold">
-        <div class="backgroundvid">
+ <div class="abovethefold">
+        <div class="backgroundvid desktop-bg">
         <!-- <section id="scrolly">
         <div id="videowrapper">
           <div id="fullScreenDiv"> -->
             <video id="video" role="presentation" muted autoplay loop preload="auto" class="blur">
               <source src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/AdobeStock_367005223.webm" type="video/webm">
                       </video>
+                    </div>
+            <div class="backgroundvid mobile-bg">
+                      <img src="https://raw.githubusercontent.com/maiarosenfeld/wpvi-health-inspections/main/AdobeStock_367005223_compressed.gif"></img>
+                  </div>
+                  <div class="backgroundvid">
                       <div id="videoMessage" class="sticky-thing">
                         <p>University Dining Facilities Plagued With Health Violations</p>
                         <h1>Food safety inspections show many local college and university food vendors have health code violations that could make students sick.</h1>
                       </div>
-                  </div>
+                    </div> 
               </div>
           </div>
 
